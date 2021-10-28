@@ -84,8 +84,8 @@ export default {
         data.append("right", this.right);
         data.append("file", this.images[i].dataURL);
         data.append("mirror", this.mirror);
-        //const url = "https://squarim-f5ljwmnzga-ew.a.run.app/";
-        const url = "http://127.0.0.1:8000/";
+        const url = "https://squarim-f5ljwmnzga-ew.a.run.app/";
+        //const url = "http://127.0.0.1:8000/";
         const response = await fetch(url, {
           method: "POST",
           body: data,
