@@ -11,9 +11,12 @@
         ref="dropzone"
       />
       <div class="input-container" v-if="images.length > 0">
-        <span>Largeur à répliquer</span>
-        <input v-model="parameter" />
-        <span>(en pixels)</span>
+        <span>Largeur à gauche</span>
+        <input v-model="left" />
+        <span>Largeur à droite</span>
+        <input v-model="right" />
+        <span>Miroir</span>
+        <input type="checkbox" id="checkbox" v-model="mirror" />
         <button id="process-btn" @click="process">Lancer le traitement</button>
       </div>
       <div class="loader" v-if="loading">
@@ -48,7 +51,9 @@ export default {
   },
   data() {
     return {
-      parameter: 50,
+      left: 50,
+      right: 50,
+      mirror: false,
       images: [],
       transformedImages: [],
       loading: false,
@@ -75,9 +80,12 @@ export default {
       for (let i = 0; i < this.images.length; i++) {
         let data = new FormData();
         data.append("name", this.images[i].name);
-        data.append("parameter", this.parameter);
+        data.append("left", this.left);
+        data.append("right", this.right);
         data.append("file", this.images[i].dataURL);
-        const url = "https://squarim-f5ljwmnzga-ew.a.run.app/";
+        data.append("mirror", this.mirror);
+        //const url = "https://squarim-f5ljwmnzga-ew.a.run.app/";
+        const url = "http://127.0.0.1:8000/";
         const response = await fetch(url, {
           method: "POST",
           body: data,
@@ -141,6 +149,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.input-container > span {
+  margin-left: 10px;
 }
 
 .input-container > input {
