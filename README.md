@@ -5,8 +5,7 @@ https://squarim.web.app/
 
 If you need square images but can't afford to crop them and don't want to spend too much time in Photoshop, **squarim** may help you! 
 
-<img width="1146" alt="Capture d’écran 2021-12-07 à 16 04 32" src="https://user-images.githubusercontent.com/11570911/181230331-679ec6de-af9c-49ca-93aa-8b9025eb1fd8.png">
-
+<img width="1463" alt="Capture d’écran 2022-07-27 à 13 01 09" src="https://user-images.githubusercontent.com/11570911/181231696-800e68c3-1385-4f6a-8dc0-2f5235c08342.png">
 
 You can use squarim in the following cases:
 
