@@ -3,7 +3,11 @@
 Make images square again!
 https://squarim.web.app/
 
-If you need square images but can't afford to crop them, **squarim** may help you! 
+If you need square images but can't afford to crop them and don't want to spend too much time in Photoshop, **squarim** may help you! 
+
+<img width="1146" alt="Capture d’écran 2021-12-07 à 16 04 32" src="https://user-images.githubusercontent.com/11570911/181230331-679ec6de-af9c-49ca-93aa-8b9025eb1fd8.png">
+
+
 You can use squarim in the following cases:
 
 ### 1. When the background is plain and the subject is centered
